@@ -30,6 +30,7 @@ body
     overflow: auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 a:visited, a:focus
