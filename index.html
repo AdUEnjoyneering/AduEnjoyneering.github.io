@@ -30,33 +30,34 @@
             {
                 .topnav a {float: none; width: 100%;}
                 .center-fit {display: none;}
-                #height {height: 50px;}
-                #logo {height: 115px;}
+                .height {height: 50px;}
+                .height img {height: 115px;}
             }
 
             @media screen and (min-width: 601px) and (max-width: 900px)
             {
                 .welcome-small {display: none;}
-                #height
+                .height
                 {height: 86px; margin: 0px;}
                 #logo {margin-top:-10px;}
-                #logo {height: 140px;}
+                .height img {height: 140px;}
             }
 
             @media screen and (min-width: 901px)
             {
                 .welcome-small {display: none;}
-                #height
+                .height
                 {height: 86px; margin: 0px;}
-                #logo {margin-top:-20px;}
+                .height img {margin-top:-20px;}
             }
 
         </style>
     </head>
     <body>
         <header>
-            <div id = "height">
-                    <img id ="logo" src="img/LOGO_1s.png" style=" pointer-events:none;" alt="LOGO">
+            <div class = "height">
+                <a href="index.html"><img alt="LOGO" src="img/LOGO_1s.png" style="pointer-events: none;"></a>
+                <!-- <img id ="logo" src="img/LOGO_1s.png" style=" pointer-events:none;" alt="LOGO"> -->
             </div>
             <p class = "login" style="margin: 0; text-align: right; margin-right: 1%;">
                 <a href="" style="text-decoration: none;">LOGIN</a> | <a href="signup.html" style="text-decoration: none;">SIGNUP</a>
