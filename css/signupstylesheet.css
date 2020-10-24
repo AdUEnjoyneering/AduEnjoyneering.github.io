@@ -37,7 +37,25 @@ background:#0389B0;
 {text-align:center;
 background:#1B2226;
 color: white;
-padding: 15px; 30px;
+padding: 15px, 30px;
 border:none;
 border-radius:50px;
+}
+
+@media screen and (max-width: 600px)
+{
+    .topnav a {float: none; width: 100%;}
+    .center-fit {display: none;}
+    #height {height: 50px;}
+    #logo {height: 115px;}
+
+}
+
+@media screen and (min-width: 600px)
+{
+    .welcome-small {display: none;}
+    #logo-small {display: none;}
+    #height
+    {height: 86px; margin: 0px;}
+    #logo {margin-top:-20px;}
 }

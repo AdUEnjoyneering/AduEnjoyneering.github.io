@@ -146,21 +146,3 @@ footer
     text-align: center;
 }
 
-@media screen and (max-width: 600px)
-{
-    .topnav a {float: none; width: 100%;}
-    .center-fit {display: none;}
-    #height {height: 60px;}
-    #logo {height: 115px;}
-
-}
-
-@media screen and (min-width: 600px)
-{
-    .welcome-small {display: none;}
-    #logo-small {display: none;}
-    #height
-    {height: 110px; margin: 0px;}
-    #logo {margin-top:-20px;}
-}
-

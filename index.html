@@ -13,11 +13,30 @@
         <title>Enjoyneering</title>
         <link rel="stylesheet" href="css/main.css" type="text/css">
         <style>
+
+            @media screen and (max-width: 600px)
+            {
+                .topnav a {float: none; width: 100%;}
+                .center-fit {display: none;}
+                #height {height: 50px;}
+                #logo {height: 115px;}
+
+            }
+
+            @media screen and (min-width: 600px)
+            {
+                .welcome-small {display: none;}
+                #logo-small {display: none;}
+                #height
+                {height: 86px; margin: 0px;}
+                #logo {margin-top:-20px;}
+            }
+
         </style>
     </head>
     <body>
         <header>
-            <div id = "height" style="height: 86px;">
+            <div id = "height">
                     <img id ="logo" src="img/LOGO_1s.png" style=" pointer-events:none;" alt="LOGO">
             </div>
             <p class = "login" style="margin: 0; text-align: right; margin-right: 1%;">
