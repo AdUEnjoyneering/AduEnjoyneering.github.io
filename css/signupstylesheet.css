@@ -1,45 +1,50 @@
-#signup-page{
-padding-top: 30px;
+#signup-page {padding-top: 30px;}
+
+#signup-consent
+{
+    text-align:center;
+    font-size:18px;
+    margin-left:15%; margin-right:15%;
+    border-radius:20px;
+    padding: 1.5em;
+    background-color: #1B2226;
+    color: white;
 }
 
-#signup-consent{
-text-align:center;
-font-size:18px;
-margin-left:15%; margin-right:15%;
-border-radius:30px;
-padding: 1.5em;
-background-color: #1B2226;
-color: white;
-}
-
-#signup-register{
-text-align:center;
-padding-top: 30px;
-line-height:2em;
-padding-bottom: 20px;
+#signup-register
+{
+    text-align:center;
+    padding-top: 30px;
+    line-height:1.5em;
+    padding-bottom: 20px;
 }
 
 #signup-register label
-{font-weight: bold;
-display:block;
-padding-bottom:10px;}
+{
+    font-weight: bold;
+    display:block;
+}
 
 #signup-register input[type="text"], #signup-register input[type="email"], #signup-register input[type="password"]
-{padding: 4px;
-width:40%;
-font-size:20px;
-color: white;
-border: none;
-background:#0389B0;
+{
+    padding: 1px;
+    width:40%;
+    font-size:20px;
+    color: white;
+    border: none;
+    background:#0389B0;
+    border-radius: 3px;
 }
 
 #signup-register input[type="submit"]
-{text-align:center;
-background:#1B2226;
-color: white;
-padding: 15px 30px;
-border:none;
-border-radius:50px;
+{
+    margin-top: 1%;
+    text-align:center;
+    background:#1B2226;
+    color: white;
+    padding: 5px 20px;
+    border:none;
+    border-radius:50px;
 }
 
 @media screen and (max-width: 600px)
@@ -48,13 +53,20 @@ border-radius:50px;
     .center-fit {display: none;}
     #height {height: 50px;}
     #logo {height: 115px;}
-
 }
 
-@media screen and (min-width: 600px)
+@media screen and (min-width: 601px) and (max-width: 900px)
 {
     .welcome-small {display: none;}
-    #logo-small {display: none;}
+    #height
+    {height: 86px; margin: 0px;}
+    #logo {margin-top:-10px;}
+    #logo {height: 140px;}
+}
+
+@media screen and (min-width: 901px)
+{
+    .welcome-small {display: none;}
     #height
     {height: 86px; margin: 0px;}
     #logo {margin-top:-20px;}
