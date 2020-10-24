@@ -24,13 +24,14 @@ body
     display: flex;
     flex-direction: column;
     padding: 0px;
-    background-image: url("https://www.4shared.com/img/jPiA0ru-ea/s25/1754f12f1b8/BG_online");
+    background-image: url("/img/BG.png");
     font-family: TW Cen MT, serif;
     background-color: #FEE1BF;
     overflow: auto;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-repeat: repeat;
     background-size: cover;
+    background-attachment: fixed;
+    
 }
 
 a:visited, a:focus
