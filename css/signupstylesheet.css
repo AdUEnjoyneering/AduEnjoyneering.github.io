@@ -63,7 +63,7 @@
     {width:80%;}
     #consent{font-size: 18px;}
 }
-
+/* medium screen */
 @media screen and (min-width: 480px) and (max-width: 767px)
 {
     #signup-consent{font-size: 15px;}
@@ -73,7 +73,7 @@
     {width:60%;}
     #consent{font-size: 22px;}
 }
-
+/* large screen */
 @media screen and (min-width: 768px)
 {
     #signup-consent{font-size: 18px;}
