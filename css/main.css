@@ -43,6 +43,7 @@ a:hover
 }
 .button
 {
+    background-color: transparent;
     margin: 3px;
     display: inline-block;
     font-weight: bold;
