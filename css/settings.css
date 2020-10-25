@@ -1,0 +1,83 @@
+#settings
+{
+    text-align: center;
+    padding-top: 30px;
+    line-height: 1.5em;
+    padding-bottom: 20px;
+
+}
+#settings input[type="text"], #settings input[type="email"]
+{
+    padding: 1px;
+    width: 40%;
+    font-size: 20px;
+    color: white;
+    border: none;
+    background: #0389B0;
+    border-radius: 3px;
+
+}
+#settings input[type="password"]
+{
+    padding: 1px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    background: #0389B0;
+    border-radius: 3px;
+}
+#settings input[type="submit"]
+{
+    padding: 1px;
+    width: 7em;
+    height: 1.5em;
+    font-size: 20px;
+    box-shadow: 0px 2px 0px 0 rgba(0,0,0,0.24), 0px 0px 10px 0 rgba(0,0,0,0.19);
+    border: 0px solid black;
+    border-radius: 5px;
+    background:#FE7513;
+    font-weight: bold;
+}
+#back
+{
+   box-shadow: 0px 2px 0px 0 rgba(0,0,0,0.24), 0px 0px 10px 0 rgba(0,0,0,0.19);
+   border: 0px solid black;
+   border-radius: 5px;
+   width:50px;
+   background-color: #FAA30F;
+   margin-left:3%;
+   margin-top: 1%;
+}
+button:active[type=backbutton]
+{
+    background-color: #FE7513;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}
+#avatar-choose
+{
+    text-align: center;
+    font-size: 18px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 60px;
+    padding-top: 2%;
+    height: 3%;
+    background-color: #1B2226;
+    color: white;
+    overflow: auto;
+}
+#avatar-choose button
+{
+    margin-left: 8px;
+    margin-right:8px;
+    margin-bottom: 3%;
+    display: inline-block;
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    border: 1px solid #FE7513;
+    cursor: pointer;
+    background-color:#FAA30F;
+    box-shadow: 0px 2px 0px 0 rgba(0,0,0,0.24), 0px 0px 10px 0 rgba(0,0,0,0.19);
+}
