@@ -12,20 +12,9 @@
         <link rel="stylesheet" href="css/bootstrap-responsive.css">
         <title>Enjoyneering</title>
         <link rel="stylesheet" href="css/main.css" type="text/css">
+        <link rel="stylesheet" href="css/login.css" type="text/css">
         <link rel="icon" href="img/favicon.ico">
         <style>
-
-            .imgbox
-            {
-                display: grid;
-                height: 100%;
-            }
-            .center-fit, .welcome-small
-            {
-                max-width: 100%;
-                max-height: 100vh;
-                margin: auto;
-            }
 
         </style>
     </head>
@@ -47,10 +36,16 @@
                 </div> 
             </div>
         </header>
-        <div class="imgbox">
-            <img class="center-fit" img src="https://www.4shared.com/img/Hnm_R1m8ea/s25/17550504030/GIF_combines" alt = "welcoming">
-            <img class = "welcome-small" src="https://www.4shared.com/img/bzu4VllDiq/s25/175505028c0/Welcome_GIFwith_text" alt="LOGO">
+        <form action="index.html" method="POST">
+        <div class = "loginpage">
+            <input type = "text" name="userName"> <label>USERNAME</label>
+            <input type = "password" name="passWord"> <label>PASSWORD</label>
+            <input type="submit" name="submit" value="Login">
+            <label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
+            <a href="#">Forgot password?</a>
         </div>
+        </form>
+
         <script src="https://stackpath.boothstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css%22%3E"></script>
         <footer>
             <p style="margin: 0px; padding: 7px;">
