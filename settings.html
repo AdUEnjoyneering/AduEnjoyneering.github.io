@@ -56,22 +56,22 @@
                 <button>  </button>
                 <p> SELECT AVATAR </p>
             </div>
-
-            <div id="settings">
-                <label>&emsp;	&nbsp;Username: </label>
-                <input type="text" name="username">
-                <br>
-                <label>Email address: </label>
-                <input type="email" name="email address">
-                <br>
-                <label>Old password: </label>
-                <input type="password" name="old password">
-                <label>New password: </label>
-                <input type="password" name="new password">
-                <br> <br>
-                <input type="submit" name="submit" value="SAVE">
-            </div>
-            
+            <form action = "saveSettings.html" method="post">
+                <div id="settings">
+                    <input type = "text" name="userName">
+                    <label>USERNAME</label>
+    
+                    <input type = "email" name="emailAddress">
+                    <label>EMAIL ADDRESS</label>
+    
+                    <input type = "password" name="passWord">
+                    <label>OLD PASSWORD</label>
+    
+                    <input type = "password" name="newpassWord">
+                    <label>NEW PASSWORD</label>
+                    <input type="submit" name="submit" value="SAVE">
+                </div>
+            </form>
     </body>
     <footer>
             <p style="margin: 0px; padding: 7px;">

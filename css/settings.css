@@ -1,12 +1,20 @@
 #settings
 {
-    text-align: center;
+    text-align:center;
     padding-top: 30px;
-    line-height: 1.5em;
     padding-bottom: 20px;
 
 }
-#settings input[type="text"], #settings input[type="email"]
+
+#settings label
+{
+    font-weight: bold;
+    display:block;
+}
+
+#settings input[type="text"], 
+#settings input[type="email"], 
+#settings input[type="password"]
 {
     padding: 1px;
     width: 40%;
@@ -17,17 +25,10 @@
     border-radius: 3px;
 
 }
-#settings input[type="password"]
-{
-    padding: 1px;
-    font-size: 20px;
-    color: white;
-    border: none;
-    background: #0389B0;
-    border-radius: 3px;
-}
+
 #settings input[type="submit"]
 {
+    margin-top: 10px;
     padding: 1px;
     width: 7em;
     height: 1.5em;
@@ -80,4 +81,26 @@ button:active[type=backbutton]
     cursor: pointer;
     background-color:#FAA30F;
     box-shadow: 0px 2px 0px 0 rgba(0,0,0,0.24), 0px 0px 10px 0 rgba(0,0,0,0.19);
+}
+
+/* small screen */
+@media screen and (max-width: 479px) 
+{
+    #settings input[type="text"], 
+    #settings input[type="email"]
+    {width:80%;}
+}
+/* medium screen */
+@media screen and (min-width: 480px) and (max-width: 767px)
+{
+    #settings input[type="text"], 
+    #settings input[type="email"]
+    {width:60%;}
+}
+/* large screen */
+@media screen and (min-width: 768px)
+{
+    #settings input[type="text"], 
+    #settings input[type="email"]
+    {width:40%;}
 }
