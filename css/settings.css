@@ -59,8 +59,8 @@ button:active[type=backbutton]
 {
     text-align: center;
     font-size: 18px;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 5%;
+    margin-right: 5%;
     border-radius: 60px;
     padding-top: 2%;
     height: 3%;
@@ -71,11 +71,11 @@ button:active[type=backbutton]
 #avatar-choose button
 {
     margin-left: 8px;
-    margin-right:8px;
+    margin-right:1px;
     margin-bottom: 3%;
     display: inline-block;
-    height: 85px;
-    width: 85px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
     border: 1px solid #FE7513;
     cursor: pointer;
@@ -87,20 +87,23 @@ button:active[type=backbutton]
 @media screen and (max-width: 479px) 
 {
     #settings input[type="text"], 
-    #settings input[type="email"]
+    #settings input[type="email"],
+    #settings input[type="password"]
     {width:80%;}
 }
 /* medium screen */
 @media screen and (min-width: 480px) and (max-width: 767px)
 {
     #settings input[type="text"], 
-    #settings input[type="email"]
+    #settings input[type="email"],
+    #settings input[type="password"]
     {width:60%;}
 }
 /* large screen */
 @media screen and (min-width: 768px)
 {
     #settings input[type="text"], 
-    #settings input[type="email"]
+    #settings input[type="email"],
+    #settings input[type="password"]
     {width:40%;}
 }
