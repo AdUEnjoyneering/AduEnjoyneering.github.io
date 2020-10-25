@@ -25,24 +25,30 @@
                 max-height: 100vh;
                 margin: auto;
             }
-
-            @media screen and (max-width: 479px)
+            /* SUPER SMALL SCREEN */
+            @media screen and (max-width: 364px)
+            {
+                .topnav a {float: none; width: 100%;}
+                .center-fit {display: none;}
+                .height img {display:none}
+            }
+            /* SMALL SCREEN */
+            @media screen and (min-width: 365px) and (max-width: 479px)
             {
                 .topnav a {float: none; width: 100%;}
                 .center-fit {display: none;}
                 .height {height: 50px;}
                 .height img {height: 115px;}
             }
-
+            /* MEDIUM SCREEN */
             @media screen and (min-width: 480px) and (max-width: 767px)
             {
                 .welcome-small {display: none;}
                 .height
                 {height: 86px; margin: 0px;}
-                #logo {margin-top:-10px;}
-                .height img {height: 140px;}
+                .height img {margin-top:-10px;height: 140px;}
             }
-
+            /* LARGE SCREEN */
             @media screen and (min-width: 768px)
             {
                 .welcome-small {display: none;}
@@ -75,7 +81,6 @@
             <img class="center-fit" img src="https://www.4shared.com/img/Hnm_R1m8ea/s25/17550504030/GIF_combines" alt = "welcoming">
             <img class = "welcome-small" src="https://www.4shared.com/img/bzu4VllDiq/s25/175505028c0/Welcome_GIFwith_text" alt="LOGO">
         </div>
-
         <script src="https://stackpath.boothstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css%22%3E"></script>
         <footer>
             <p style="margin: 0px; padding: 7px;">
