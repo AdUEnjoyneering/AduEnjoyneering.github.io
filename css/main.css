@@ -132,7 +132,6 @@ footer
 @media screen and (max-width: 260px)
 {
     .topnav a {float: none; width: 100%;}
-    .center-fit {display: none;}
     .height img {display:none}
     footer{font-size: 12px;}
 }
@@ -140,7 +139,6 @@ footer
 @media screen and (min-width: 261px) and (max-width: 369px)
 {
     .topnav a {float: none; width: 100%;}
-    .center-fit {display: none;}
     .height {height: 34px;}
     .height img {height: 60px;}
     footer{font-size: 12px;}
@@ -149,7 +147,6 @@ footer
 @media screen and (min-width: 370px) and (max-width: 479px)
 {
     .topnav a {float: none; width: 100%;}
-    .center-fit {display: none;}
     .height {height: 74px;}
     .height img {height: 115px;}
     footer{font-size: 12px;}
@@ -157,7 +154,6 @@ footer
 /* MEDIUM SCREEN */
 @media screen and (min-width: 480px) and (max-width: 767px)
 {
-    .welcome-small {display: none;}
     .height
     {height: 110px; margin: 0px;}
     .height img {margin-top:-10px;height: 140px;}
@@ -166,7 +162,6 @@ footer
 /* LARGE SCREEN */
 @media screen and (min-width: 768px)
 {
-    .welcome-small {display: none;}
     .height
     {height: 110px; margin: 0px;}
     .height img {margin-top:-20px;}

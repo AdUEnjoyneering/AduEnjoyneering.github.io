@@ -32,6 +32,32 @@
                 margin: auto;
             }
 
+            /* SUPER SMALL SCREEN */
+            @media screen and (max-width: 260px)
+            {
+                .center-fit {display: none;}
+            }
+            /* SMALL SCREEN */
+            @media screen and (min-width: 261px) and (max-width: 369px)
+            {
+                .center-fit {display: none;}
+            }
+
+            @media screen and (min-width: 370px) and (max-width: 479px)
+            {
+                .center-fit {display: none;}
+            }
+            /* MEDIUM SCREEN */
+            @media screen and (min-width: 480px) and (max-width: 767px)
+            {
+                .center-fit {display: none;}
+            }
+            /* LARGE SCREEN */
+            @media screen and (min-width: 768px)
+            {
+                .welcome-small {display: none;}
+            }
+
         </style>
 
         <script>
@@ -64,20 +90,18 @@
             </div>
         </header>
 
+
         <div class="imgbox">
             <img class="center-fit" img src="img/GIF_combines.gif" alt = "welcoming">
             <img class = "welcome-small" src="img/phoneVer.gif" alt="LOGO">
+            <footer>
+                <p style="margin: 0px; padding: 7px;">
+                    A platform for aspiring engineers, by aspiring engineers. <br>
+                    All Rights Reserved. 2020
+                </p>
+            </footer>
         </div>
-
-        <footer>
-            <p style="margin: 0px; padding: 7px;">
-                A platform for aspiring engineers, by aspiring engineers. <br>
-                All Rights Reserved. 2020
-            </p>
-        </footer>
-
-
-
+        
         <!-- <div id="id01" class="modal" data-backdrop="static" data-keyboard="false"> -->
         <!-- disabled muna yung hindi naclose kasi ala pang account -->
         <div id="id01" class="modal">
