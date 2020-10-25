@@ -13,7 +13,6 @@ header
 {
     padding: 0;
     background-image: linear-gradient(to right, #0389B0, #209FB9);
-    color: white;
     overflow:auto;
 }
 body
@@ -137,7 +136,7 @@ footer
 {
     .topnav a {float: none; width: 100%;}
     .center-fit {display: none;}
-    .height {height: 10px;}
+    .height {height: 34px;}
     .height img {height: 60px;}
     footer{font-size: 12px;}
 }
@@ -146,7 +145,7 @@ footer
 {
     .topnav a {float: none; width: 100%;}
     .center-fit {display: none;}
-    .height {height: 50px;}
+    .height {height: 74px;}
     .height img {height: 115px;}
     footer{font-size: 12px;}
 }
@@ -155,7 +154,7 @@ footer
 {
     .welcome-small {display: none;}
     .height
-    {height: 86px; margin: 0px;}
+    {height: 110px; margin: 0px;}
     .height img {margin-top:-10px;height: 140px;}
     footer{font-size: 14px;}
 }
@@ -164,7 +163,7 @@ footer
 {
     .welcome-small {display: none;}
     .height
-    {height: 86px; margin: 0px;}
+    {height: 110px; margin: 0px;}
     .height img {margin-top:-20px;}
     footer{font-size: 16px;}
 }
