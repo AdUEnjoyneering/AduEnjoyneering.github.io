@@ -28,7 +28,6 @@
 #signup-register input[type="text"], #signup-register input[type="email"], #signup-register input[type="password"]
 {
     padding: 1px;
-    width:40%;
     font-size:20px;
     color: white;
     border: none;
