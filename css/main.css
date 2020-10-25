@@ -137,8 +137,8 @@ footer
 {
     .topnav a {float: none; width: 100%;}
     .center-fit {display: none;}
-    .height {height: 25px;}
-    .height img {height: 75px;}
+    .height {height: 10px;}
+    .height img {height: 60px;}
     footer{font-size: 12px;}
 }
 
