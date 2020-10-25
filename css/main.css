@@ -30,13 +30,7 @@ body
     background-repeat: repeat;
     background-size: cover;
     background-attachment: fixed;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-    
 }
-
-body::-webkit-scrollbar 
-{display: none;}
 
 a:visited, a:focus
 {
