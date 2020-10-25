@@ -118,10 +118,27 @@ input[type=search]
 
 footer
 {
-    font: 100vw;
     color: white;
     background-color: #1B2226;
     display: fixed;
     text-align: center;
 }
+
+@media screen and (max-width: 479px)
+{
+    footer{font-size: 12px;}
+    
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px)
+{
+    footer{font-size: 14px;}
+}
+
+@media screen and (min-width: 768px)
+{
+    footer{font-size: 16px;}
+}
+
+
 
