@@ -170,7 +170,7 @@ footer
 
 @font-face {
     font-family: 'TW Cen MT';
-    src: url('font/TCM_____.TTF') format('truetype');
+    src: url('font/TCM_____.TTF');
     src: url('font/TwCenMT-Regular.eot');
     src: url('font/TwCenMT-Regular.eot?#iefix') format('embedded-opentype'),
     url('font/TwCenMT-Regular.woff') format('woff'),
