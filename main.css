@@ -114,10 +114,11 @@ footer
 
 @font-face {
     font-family: 'Tw Cen MT';
+    src: url('font/TCM_____.TTF') format('truetype');
     src: url('font/TwCenMT-Regular.eot');
     src: url('font/TwCenMT-Regular.eot?#iefix') format('embedded-opentype'),
-        url('font/TwCenMT-Regular.woff') format('woff'),
-        url('font/TwCenMT-Regular.svg#TwCenMT-Regular') format('svg');
+    url('font/TwCenMT-Regular.woff') format('woff'),
+    url('font/TwCenMT-Regular.svg#TwCenMT-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
