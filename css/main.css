@@ -25,6 +25,8 @@ body
     flex-direction: column
 }
 
+body::-webkit-scrollbar {display: none;}
+
 footer
 {
     color: white;
