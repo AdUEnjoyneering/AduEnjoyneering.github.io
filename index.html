@@ -22,6 +22,7 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/popup.css" type="text/css">
 
     <style>
 
@@ -40,9 +41,8 @@
         }
 
     </style>
-
     <script>$(document).ready(function(){$("#id01").modal('show')});</script>
-
+    <script>$(document).ready(function(){$("#id02").bg-modal('show')});</script>
     </head>
     <body>
         <header>
@@ -90,6 +90,43 @@
                 </div>
             </div>
         </header>
+        
+
+        <div id = "id02" class="bg-modal">
+            
+            <div class = "container1">
+
+                <button onclick="document.getElementById('id02').style.display='none'" class="exit">+</button>
+                
+                <input type="radio" id="i1" name="images" checked/>
+                <input type="radio" id="i2" name="images" />
+                <input type="radio" id="i3" name="images" />
+
+                <div class="slide_img" id="one">
+                            <img src="img/speechbubble_img.png" >
+                            <label class="prev" for="i3"><span></span></label>
+                            <label class="next" for="i2"><span></span></label>
+
+                </div>
+                <div class="slide_img" id="two">
+                            <img src="img/Tablet_PNG.gif" >
+                                <label class="prev" for="i1"><span></span></label>
+                                <label class="next" for="i3"><span></span></label>
+                </div>
+                <div class="slide_img" id="three">
+                            <img src="img/favicon.ico" >
+                            <label class="prev" for="i2"><span></span></label>
+                            <label class="next" for="i1"><span></span></label>
+                </div>
+
+                <div id="nav_slide">
+                <label for="i1" class="dots" id="dot1"></label>
+                <label for="i2" class="dots" id="dot2"></label>
+                <label for="i3" class="dots" id="dot3"></label>
+
+                </div>
+            </div>
+        </div>
 
 
         <div class="imgbox">
@@ -106,10 +143,7 @@
         <!-- <div id="id01" class="modal" data-backdrop="static" data-keyboard="false"> -->
         <!-- disabled muna yung hindi naclose kasi ala pang account -->
         <div id="id01" class="modal">
-        
             <form class="modal-content animate" action="/action_page.php" method="post">
-                <div class="imgcontainer">
-                </div>
                     <div class="container">
                     <label for="uname"><b>USERNAME</b></label>
                     <input type="text" name="userName" required>
