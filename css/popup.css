@@ -1,0 +1,137 @@
+/*EXIT BUTTON*/
+.exit
+{
+position: absolute;
+top: -15px;
+right: -10px;
+font-size: 30px;
+transform: rotate(45deg);
+cursor: pointer;
+background:#DD6600;
+color: black;
+padding: 7px 20px;
+font-weight: bold;
+border:none;
+border-radius:100px;
+box-shadow: 0 5px #000000;
+z-index: 10;
+}
+
+/*EXIT BUTTON HOVER EFFECTS*/
+.exit:hover {background-color: #FF4500}
+.exit:active {
+transform: rotate(45deg);
+background-color: #18A3BE;
+box-shadow: 0 5px #992A01;
+transform: translateY(4px);}
+
+/*BLACK OPACITY BACKGROUND*/
+.bg-modal
+{
+
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+    overflow: auto;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-size: cover;
+}
+
+/*POP UP CONTENTS*/
+.container1
+{
+    margin: 0 auto;
+    position: relative;
+    width: 70%;
+    height: auto;
+    margin-top: 20px;
+    padding-bottom: 40%;
+    background-color: #DD6600;
+    border-radius:80px;
+    box-shadow: 0 5px #8C837C;
+
+}
+/*PICS CONFIG*/
+.slide_img
+{
+        margin-bottom: 10%;
+        position: absolute;
+        margin-left: 2%;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        
+}
+
+/* img {
+            width: inherit;
+            height: inherit;
+            } */
+
+/*PICS STYLE*/
+.slide_img img
+{
+width: 96%;
+height: 88%;
+border-radius:60px;
+background-color: white;
+box-shadow: 5px 5px 5px #9C4C06;
+}
+
+#i1, #i2, #i3
+{display: none;}
+
+/*SLIDES OR DOTS CONFIG*/
+
+.prev, .next {
+width: 5%;
+height: 80%;
+position: absolute;
+top: 40px;
+border-radius: 20px;
+cursor: pointer;
+}
+
+.next {
+    right: 0;
+}
+.prev {
+    left: 0;
+}
+
+#nav_slide
+{
+width: 100%;
+bottom: 3%;
+height: 11px;
+position: absolute;
+text-align: center;
+z-index: 99;
+}
+.dots {
+top: -5px;
+width: 18px;
+height: 18px;
+margin: 0 3px;
+position: relative;
+border-radius: 100%;
+display: inline-block;
+background-color: rgba(0, 0, 0, 0.6);
+cursor: pointer;
+}
+
+.slide_img
+{
+    z-index: -1;
+}
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three
+{
+    z-index: 9;
+}
