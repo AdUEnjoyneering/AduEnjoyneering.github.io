@@ -182,6 +182,8 @@ clear: both;
     .box {width: 100%; border-radius: 10px;}
     #content
     {display: none;}
+    form.search input[type=search], form.search button
+    {padding: 2px;}
 }
 
 @media screen and (min-width: 600px)
