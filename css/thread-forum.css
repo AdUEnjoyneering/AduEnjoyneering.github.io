@@ -105,7 +105,7 @@ button .fas
     outline: none;
 }
 
-#content, #content1
+#content
 {
     width: 100%;
     background: white;
@@ -116,6 +116,7 @@ button .fas
     border-radius: 5px;
     resize: none;
     height: 150px;
+    padding-left: 2%;
 }
 
 .title input[type="text"] 
@@ -129,10 +130,11 @@ button .fas
     border-radius: 15px;
     margin-bottom: 3%;
     width: 100%;
+    padding-left: 2%;
 }
 
 .tags input[type="text"]
-{   
+{   padding-left: 1%;
     font-size: 22px; 
     font-weight: bold; 
     color: black; 
@@ -179,8 +181,11 @@ clear: both;
 
 @media screen and (max-width: 600px) {
     .sidebar-left {width: 100%; min-height: auto;}
-    .sidebar-left h2 {margin-top: 1%;}
+    .sidebar-left h2 {margin-top: 1%; font-size: 18px;}
+    .title::placeholder{font-size: 18px;}
+    .title input[type="text"] {font-size: 18px;}
     .main {width: 100%;}
+    .tags input[type="text"] {font-size: 14px;}
     #content {height: 100px;}
     .box {width: 100%; border-radius: 10px;}
     form.search input[type=search], form.search button
