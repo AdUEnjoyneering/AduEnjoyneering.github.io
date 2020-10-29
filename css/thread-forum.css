@@ -114,6 +114,8 @@ button .fas
     font-size: 20px;
     border: none;
     border-radius: 5px;
+    resize: none;
+    height: 150px;
 }
 
 .title input[type="text"] 
@@ -179,15 +181,8 @@ clear: both;
     .sidebar-left {width: 100%; min-height: auto;}
     .sidebar-left h2 {margin-top: 1%;}
     .main {width: 100%;}
+    #content {height: 100px;}
     .box {width: 100%; border-radius: 10px;}
-    #content
-    {display: none;}
     form.search input[type=search], form.search button
     {padding: 2px;}
-}
-
-@media screen and (min-width: 600px)
-{
-    #content1 {display: none;}
-
 }
