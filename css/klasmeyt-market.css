@@ -38,6 +38,7 @@
     padding: 20px;
     border-radius: 10px;
     background-color: #1B2226;
+    min-height: 90vh;
 }
 
 .sidebar-right h2
@@ -94,52 +95,53 @@ p.post
     outline: none;
 }
 
-.sameline
-{
-    display : flex;
-    align-items : center;
-    justify-content: center;
-}
+/* BOX */
 
-.btnkm
+.topbox, .search-bar
 {
     font-weight: bold;
-    padding: 0px 50px;
-    font-size: 18px;
-    cursor: pointer;
-    color: #181411;
-    background-color: #FEA12F;
-    border-radius:5px;
-    border: none;
-}
-
-.sameline p
-{
+    color: #fea12f ;
+    float: left;
+    vertical-align: middle;
     font-size: 20px;
-    color: #fea12f;
-    font-weight: bold;
-    margin: 0;
-    margin-right: 10px;
+}
+
+.topbox
+{
+    width: 50%;
 }
 
 .search-bar
 {
-    float: right;
-    margin-left: auto;
-    color: #fea12f;
-    font-weight: bold;
-    font-size: 20px;
+    width: 50%;
 }
 
-.search-bar input[type=search]
+.btnkm
 {
+    background-color: #fea12f;
+    border: none;
     border-radius: 5px;
-    font-size: 20px;
-    height: 28px;
+    padding: 0px 50px;
+    font-weight: bold;
+    font-size: 15px;
 }
 
+.search-bar input[type="search"]
+{
+    width: 200px;
+    border-radius: 5px;
+    height: 25px;
+}
+
+@media screen and (max-width: 845px)
+{
+    .topbox {width: 100%;}
+    .search-bar {width: 100%;}
+    .search-bar input[type="search"] {width: 136px;}
+    .sidebar-right h2 {margin-top: 1%; font-size: 18px;}
 
 
+}
 @media screen and (max-width: 600px) {
     .sidebar-right {width: 100%; min-height: auto;}
     .main {width: 100%;}
@@ -147,5 +149,6 @@ p.post
     .sidebar-right h2 {margin-top: 1%; font-size: 18px;}
     #inquiry {margin-top: 1%;}
     .flex {display: flex; flex-direction: column-reverse}
+
     
 }
