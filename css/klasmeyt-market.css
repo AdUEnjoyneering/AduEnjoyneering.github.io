@@ -10,6 +10,26 @@
     clear: both;
 }
 
+/* Scrollbar styles */
+::-webkit-scrollbar 
+{
+    width: 20px;
+}
+
+::-webkit-scrollbar-track 
+{
+    border: none;
+    background-color: #fea12f;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb 
+{
+    background: #003f5a;
+    border-radius: 10px;
+}
+
+
 .sidebar-right
 {
     width: 23%;
@@ -30,6 +50,7 @@
 
 .box
 {
+    color: white;
     display: block;
     margin-top: 20px;
     margin-left: auto;
@@ -39,6 +60,10 @@
     border-radius: 10px;
     background-color: #1B2226;
     min-height: 90vh;
+    max-height: 90vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    word-wrap: break-word;
 }
 
 .sidebar-right h2
@@ -57,7 +82,7 @@ p.post
     margin-right: 2%;
     font-weight: 50;
     color: #e8942e;
-    line-height: 2px;
+    line-height: 15px;
     text-align: right;
 }
 
@@ -113,6 +138,7 @@ p.post
 
 .search-bar
 {
+    text-align: right;
     width: 50%;
 }
 
@@ -133,13 +159,11 @@ p.post
     height: 25px;
 }
 
-@media screen and (max-width: 845px)
+@media screen and (max-width: 780px)
 {
-    .topbox {width: 100%;}
-    .search-bar {width: 100%;}
-    .search-bar input[type="search"] {width: 136px;}
+    .topbox {width: 100%; text-align: center;}
+    .search-bar {width: 100%; text-align: center;}
     .sidebar-right h2 {margin-top: 1%; font-size: 18px;}
-
 
 }
 @media screen and (max-width: 600px) {
