@@ -3,13 +3,10 @@
     box-sizing: border-box;
 }
 
-.flex:after 
-{
-    content: "";
-    display: table;
-    clear: both;
+body {
+    background-color: #1B2226;
+    background-image: none;
 }
-
 /* Scrollbar styles */
 ::-webkit-scrollbar 
 {
@@ -20,44 +17,42 @@
 {
     border: none;
     background-color: #fea12f;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb 
 {
     background: #003f5a;
-    border-radius: 10px;
+    border-radius: 2px;   
 }
-
 
 .sidebar-right
 {
-    width: 23%;
+    width: 100%;
     background-color: #1B2226;
+    border-radius: 4px;
+
 }
 
 .main
 {
-    width: 77%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }
 
 .sidebar-right, .main
 {
-    float: left;
     padding: 10px;
-    min-height: 100vh;
+
 }
 
 .box
 {
-    color: white;
+    box-shadow: 0px 0px 0px 1px #fea12f inset;
     display: block;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #003f5a;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 4px;
     background-color: #1B2226;
     min-height: 90vh;
     max-height: 90vh;
@@ -68,9 +63,8 @@
 
 .sidebar-right h2
 {
-    margin-top: 15px;
     margin-right: 2%;
-    text-align: right;
+    text-align: center;
     font-family: TW Cen MT; 
     font-weight: bold; 
     color: white
@@ -83,17 +77,15 @@ p.post
     font-weight: 50;
     color: #e8942e;
     line-height: 15px;
-    text-align: right;
+    text-align: center;
 }
 
 #inquiry
 {
-    margin-top: 7%;
-    margin-bottom: 1%;
     background-color: #fea12f;
     resize: none;
     width: 100%;
-    height: 100px;
+    height: 80px;
     border-radius: 5px;
     padding-left: 2%;
     padding-right: 2%;
@@ -103,11 +95,20 @@ p.post
 
 #buttoninq
 {
-    float: right;
-    background: #dd6700;
+    background-color: #fea12f;
     font-weight: bold;
     border: none;
     border-radius: 5px;
+    outline: none;
+    width: 130px;
+}
+
+.centerbut {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    width: 70%
 }
 
 #box-drop { min-width:0;}
@@ -161,18 +162,14 @@ p.post
 
 @media screen and (max-width: 780px)
 {
+    /* sort by  */
     .topbox {width: 100%; text-align: center;}
+    /* search bar  */
     .search-bar {width: 100%; text-align: center;}
-    .sidebar-right h2 {margin-top: 1%; font-size: 18px;}
+    .sidebar-right h2 {font-size: 18px;}
+    .centerbut {width: 100%;}
 
 }
 @media screen and (max-width: 600px) {
-    .sidebar-right {width: 100%; min-height: auto;}
-    .main {width: 100%;}
-    .box {border-radius: 3px;}
-    .sidebar-right h2 {margin-top: 1%; font-size: 18px;}
-    #inquiry {margin-top: 1%;}
-    .flex {display: flex; flex-direction: column-reverse}
-
-    
+    .sidebar-right h2 {font-size: 18px;}
 }
