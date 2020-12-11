@@ -72,8 +72,6 @@
         </div>
     </header>
 
-    <div class="flex">
-
         <div class="main">
 
             <div class="sidebar-right">
@@ -81,11 +79,21 @@
                 <p class = "post">Make an inquiry post.</p>
                 
                 <div class="centerbut">
-                    <textarea id="inquiry" style="outline: none;" placeholder="Hi, looking to buy..."></textarea>
-                    <button type="submit" id="buttoninq">POST</button>
+                    <form action="/chuchu.php">
+                        <textarea id="inquiry" style="outline: none;" placeholder="Hi, looking to buy..."></textarea>
+                        <div class="photoalt">
+                            <input type="file" id="photo-upload" name="photoalt" accept=".tif, .jpg, .png, .jpeg" multiple="multiple">
+                        </div>
+                        <div class="centerbutton">
+                            <button type="submit" id="buttoninq">POST</button>
+                        </div>
+                        
+                    </form>
+
                 </div>
                 
             </div>
+            <br>
             <br>
             <div class="box">
 
@@ -113,8 +121,6 @@
 
         </div>
 
-        
-    </div>
 
     <footer>
         <p style="margin: 0px; padding: 10px;">

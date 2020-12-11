@@ -63,17 +63,15 @@ body {
 
 .sidebar-right h2
 {
-    margin-right: 2%;
     text-align: center;
     font-family: TW Cen MT; 
     font-weight: bold; 
-    color: white
+    color: white;
 }
 
 p.post
 {
     font-size: 15px;
-    margin-right: 2%;
     font-weight: 50;
     color: #e8942e;
     line-height: 15px;
@@ -107,8 +105,7 @@ p.post
     display: block;
     margin-left: auto;
     margin-right: auto;
-    text-align: right;
-    width: 70%
+    width: 70%;
 }
 
 #box-drop { min-width:0;}
@@ -117,9 +114,7 @@ p.post
 .btnkm:hover, 
 .btnkm:focus, 
 .search-bar input[type="search"]:focus
-{
-    outline: none;
-}
+{outline: none;}
 
 /* BOX */
 
@@ -160,6 +155,13 @@ p.post
     height: 25px;
 }
 
+input[name=photoalt] {
+    color: white;
+    box-shadow: 0px 0px 0px 1px #fea12f inset;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
 @media screen and (max-width: 780px)
 {
     /* sort by  */
@@ -167,9 +169,19 @@ p.post
     /* search bar  */
     .search-bar {width: 100%; text-align: center;}
     .sidebar-right h2 {font-size: 18px;}
-    .centerbut {width: 100%;}
+    .centerbut {width: 100%; text-align: center;}
+    .main {width: 100%;}
 
 }
 @media screen and (max-width: 600px) {
     .sidebar-right h2 {font-size: 18px;}
+    input[name=photoalt] {width: 90%;}
+    .centerbut {text-align: center;}
+}
+
+@media screen and (min-width: 601px)
+{
+    .photoalt {float: left;} 
+    .centerbutton {float: right;}
+
 }
