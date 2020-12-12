@@ -31,6 +31,7 @@ body {
     width: 100%;
     background-color: #1B2226;
     border-radius: 4px;
+    margin-bottom: 40px;
 
 }
 
@@ -178,7 +179,7 @@ input[name=photoalt] {
     input[name=photoalt] {width: 90%;}
     .centerbut {text-align: center;}
     .box {margin-top: 10px;}
-    .sidebar-right {padding: 10px 10px 0px 10px;}
+    .sidebar-right {margin-bottom: 10px;}
 }
 
 @media screen and (min-width: 601px) {

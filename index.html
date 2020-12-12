@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <meta charset="UTF-8">
     <meta name="description" content="A forum-based website for old and new engineering scholars.">
     <meta name="author" content="Team Mayari">
@@ -10,21 +11,39 @@
     <title>Enjoyneering</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/favicon.ico" />
+    
+    <!-- Header and Footer  -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    
+    <script> 
+        $(function(){
+            $("#header").load("header.html"); 
+            $("#footer").load("footer.html"); 
+        });
+    </script> 
+    
     <!-- Bootstrap files -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <!-- Nav header  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    
-    
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/main.css" type="text/css">
-    <link rel="stylesheet" href="css/index.css" type="text/css">
-    <link rel="stylesheet" href="css/popup.css" type="text/css">
 
     <style>
+
+        #page-container {
+        background-image: url("/img/op-BG.png");
+        background-repeat: repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        }
 
         /* Welcome image */
         .imgbox
@@ -39,127 +58,30 @@
             max-height: 100vh;
             margin: auto;
         }
-
+        
     </style>
 
-    <script>$(document).ready(function(){$("#id01").modal('show')});</script>
-    <script>$(document).ready(function(){$("#id02").bg-modal('show')});</script>
-
 </head>
-    
-    <body>
-    <header>
-        <div class = "height">
-            <a href="index.html"><img alt="LOGO" src="img/LOGO_1s.png" style="pointer-events: none;"></a>
-        </div>
-    
-        <div class="topnav">
-            <div class="_topnav">
-    
-            <div class="btn-group">
-    
-                <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                COURSES
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="thread-forum.html">BS Geology</a>
-                    <a class="dropdown-item" href="thread-forum.html">BS Chemical Engineering</a>
-                    <a class="dropdown-item" href="thread-forum.html">BS Civil Engineering</a>
-                    <a class="dropdown-item" href="thread-forum.html">BS Computer Engineering</a>
-                    <a class="dropdown-item" href="thread-forum.html">BS Electrical Engineering</a>
-                    <a class="dropdown-item" href="thread-forum.html">BS Electronics Engineering</a>
-                    <a class="dropdown-item" href="thread-forum.html">BS Industrial Engineering</a>
-                    <a class="dropdown-item" href="thread-forum.html">BS Mechanical Engineering</a>
-                    <a class="dropdown-item" href="thread-forum.html">BS Mining Engineering</a>
-                    <a class="dropdown-item" href="thread-forum.html">Dual Deg. MechEng. Mechatronics</a>
-                </div>
-    
+
+<body>
+
+    <div id="page-container">
+        <div id="content-wrap">
+
+            <div id="header"></div>
+
+            <div class="imgbox">
+                <img class="center-fit" img src="img/op-GIF_combines.gif" alt = "welcoming">
+                <img class = "welcome-small" src="img/op-phoneVer.gif" alt="LOGO">
             </div>
-    
-            <div class="btn-group">
-    
-            <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">KLASMEYT MARKET</button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="klasmeyt-market.html">Buy Books and Notes</a>
-                    <a class="dropdown-item" href="klasmeyt-market.html">Donate/Sell Books and Notes</a>
-                </div>
-    
-            </div>
-    
-            <div class="btn-group">
-                <a href="about-us.html" class="btn" style="text-decoration: none; color: black;">ABOUT US</a>
-            </div>
-            
-            </div>
-        </div>
-    </header>
-        
 
-        <div id = "id02" class="bg-modal">
-            
-            <div class = "container1">
-
-                <button onclick="document.getElementById('id02').style.display='none'" class="exit">+</button>
-                
-                <input type="radio" id="i1" name="images" checked/>
-                <input type="radio" id="i2" name="images" />
-                <input type="radio" id="i3" name="images" />
-
-                <div class="slide_img" id="one">
-                            <img src="img/speechbubble_img.png" >
-                            <label class="prev" for="i3"><span></span></label>
-                            <label class="next" for="i2"><span></span></label>
-
-                </div>
-                <div class="slide_img" id="two">
-                            <img src="img/Tablet_PNG.gif" >
-                                <label class="prev" for="i1"><span></span></label>
-                                <label class="next" for="i3"><span></span></label>
-                </div>
-                <div class="slide_img" id="three">
-                            <img src="img/favicon.ico" >
-                            <label class="prev" for="i2"><span></span></label>
-                            <label class="next" for="i1"><span></span></label>
-                </div>
-
-                <div id="nav_slide">
-                <label for="i1" class="dots" id="dot1"></label>
-                <label for="i2" class="dots" id="dot2"></label>
-                <label for="i3" class="dots" id="dot3"></label>
-
-                </div>
-            </div>
         </div>
 
+        <div id="footer"></div>
+    </div>
 
-        <div class="imgbox">
-            <img class="center-fit" img src="img/op-GIF_combines.gif" alt = "welcoming">
-            <img class = "welcome-small" src="img/op-phoneVer.gif" alt="LOGO">
-            <footer>
-                <p style="margin: 0px; padding: 7px;">
-                    A platform for aspiring engineers, by aspiring engineers. <br>
-                    All Rights Reserved. 2020
-                </p>
-            </footer>
-        </div>
-        
-        <!-- <div id="id01" class="modal" data-backdrop="static" data-keyboard="false"> -->
-        <!-- disabled muna yung hindi naclose kasi ala pang account -->
-        <div id="id01" class="modal">
-            <form class="modal-content animate" action="/action_page.php" method="post">
-                    <div class="container">
-                    <label for="uname"><b>USERNAME</b></label>
-                    <input type="text" name="userName" required>
-                    <label for="psw"><b>PASSWORD</b></label>
-                    <input type="password" name="passWord" required>
-                    <button type="submit">Login</button><br>
-                    <label><input type="checkbox" checked="checked" name="remember"> Remember me</label><br>
-                    <a href="forgot_password.html">Forgot password?</a><br><br>
-                    Don't have an account? <a href="signup.html">Register</a> now!
-                    </div>
-            </form>
-        </div>
+</body>
 
-    </body>
+
+
 </html>
-</div>
