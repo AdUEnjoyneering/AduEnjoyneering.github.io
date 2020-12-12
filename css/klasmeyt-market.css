@@ -59,6 +59,7 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
     word-wrap: break-word;
+    margin-top: 20px;
 }
 
 .sidebar-right h2
@@ -162,8 +163,7 @@ input[name=photoalt] {
     margin-bottom: 5px;
 }
 
-@media screen and (max-width: 780px)
-{
+@media screen and (max-width: 780px) {
     /* sort by  */
     .topbox {width: 100%; text-align: center;}
     /* search bar  */
@@ -177,11 +177,11 @@ input[name=photoalt] {
     .sidebar-right h2 {font-size: 18px;}
     input[name=photoalt] {width: 90%;}
     .centerbut {text-align: center;}
+    .box {margin-top: 10px;}
+    .sidebar-right {padding: 10px 10px 0px 10px;}
 }
 
-@media screen and (min-width: 601px)
-{
+@media screen and (min-width: 601px) {
     .photoalt {float: left;} 
     .centerbutton {float: right;}
-
 }
