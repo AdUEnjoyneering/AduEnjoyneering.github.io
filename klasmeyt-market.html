@@ -1,76 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="description" content="A forum-based website for old and new engineering scholars.">
     <meta name="author" content="Team Mayari">
     <meta name="date" content="October 17, 2020">
     <meta name="keywords" content="Forum, Engineering website, Help for engineering, Engineering Forum">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Enjoyneering</title>
+    <title>Klasmeyt Market</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/favicon.ico" />
+    
+    <!-- Header and Footer  -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    
+    <script> 
+        $(function(){
+            $("#header").load("header.html"); 
+            $("#footer").load("footer.html"); 
+        });
+    </script> 
+
     <!-- Bootstrap files -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <!-- Nav header  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
-        <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <!-- Stylesheet  -->
     <link rel="stylesheet" href="css/klasmeyt-market.css" type="text/css">
 
+    <style>
+
+        #page-container
+        {
+            background-image: none;
+            background-color: #1B2226;
+        }
+
+        </style>
 </head>
+
 <body>
 
-    <header>
-        <div class = "height">
-            <a href="index.html"><img alt="LOGO" src="img/LOGO_1s.png" style="pointer-events: none;"></a>
-        </div>
-    
-        <div class="topnav">
-            <div class="_topnav">
-    
-            <div class="btn-group">
-    
-                <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                COURSES
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="thread-forum.html">BS Geology</a>
-                    <a class="dropdown-item" href="thread-forum.html">BS Chemical Engineering</a>
-                    <a class="dropdown-item" href="thread-forum.html">BS Civil Engineering</a>
-                    <a class="dropdown-item" href="thread-forum.html">BS Computer Engineering</a>
-                    <a class="dropdown-item" href="thread-forum.html">BS Electrical Engineering</a>
-                    <a class="dropdown-item" href="thread-forum.html">BS Electronics Engineering</a>
-                    <a class="dropdown-item" href="thread-forum.html">BS Industrial Engineering</a>
-                    <a class="dropdown-item" href="thread-forum.html">BS Mechanical Engineering</a>
-                    <a class="dropdown-item" href="thread-forum.html">BS Mining Engineering</a>
-                    <a class="dropdown-item" href="thread-forum.html">Dual Deg. MechEng. Mechatronics</a>
-                </div>
-    
-            </div>
-    
-            <div class="btn-group">
-    
-            <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">KLASMEYT MARKET</button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="klasmeyt-market.html">Buy Books and Notes</a>
-                    <a class="dropdown-item" href="klasmeyt-market.html">Donate/Sell Books and Notes</a>
-                </div>
-    
-            </div>
-    
-            <div class="btn-group">
-                <a href="about-us.html" class="btn" style="text-decoration: none; color: black;">ABOUT US</a>
-            </div>
-            
-            </div>
-        </div>
-    </header>
+    <div id="page-container">
+
+        <div id="content-wrap">
+
+        <div id="header"></div>
 
         <div class="main">
 
@@ -93,41 +80,42 @@
                 </div>
                 
             </div>
-            <br>
-            <br>
+
             <div class="box">
 
-                    <div class="topbox">
-                        SORT BY
-                        <div class="btn-group">
-                            <button type="button" class="btnkm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Filter</button>
-                            <div class="dropdown-menu" id="box-drop">
-                                <a class="dropdown-item" href="">Low to High</a>
-                                <a class="dropdown-item" href="">High to Low</a>
-                                <a class="dropdown-item" href="">High ONLY</a>
-                                <a class="dropdown-item" href="">Low ONLY</a>
-                            </div>
+                <div class="topbox">
+                    SORT BY
+                    <div class="btn-group">
+                        <button type="button" class="btnkm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Filter</button>
+                        <div class="dropdown-menu" id="box-drop">
+                            <a class="dropdown-item" href="">Low to High</a>
+                            <a class="dropdown-item" href="">High to Low</a>
+                            <a class="dropdown-item" href="">High ONLY</a>
+                            <a class="dropdown-item" href="">Low ONLY</a>
                         </div>
                     </div>
-                    <div class="search-bar">
-                        <form class="search">
-                            SEARCH <input type="search">
-                        </form>
-                    </div>
+                </div>
+
+                <div class="search-bar">
+                    <form class="search">
+                        SEARCH <input type="search">
+                    </form>
+                </div>
 
             </div>
 
 
         </div>
 
+        </div>
 
-    <footer>
-        <p style="margin: 0px; padding: 10px;">
-            A platform for aspiring engineers, by aspiring engineers. <br>
-            All Rights Reserved. 2020
-        </p>
-    </footer>
-    
+        <div id="footer"></div>
+
+    </div>
+
 </body>
+
+
+
 </html>
