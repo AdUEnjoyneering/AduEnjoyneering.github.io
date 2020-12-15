@@ -1,172 +1,54 @@
 <!DOCTYPE html>
 <html>
+    
 <head>
+
     <meta charset="UTF-8">
     <meta name="description" content="A forum-based website for old and new engineering scholars.">
     <meta name="author" content="Team Mayari">
     <meta name="date" content="October 17, 2020">
     <meta name="keywords" content="Forum, Engineering website, Help for engineering, Engineering Forum">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Enjoyneering</title>
+    <title>About Us</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/favicon.ico" />
-    <!-- Bootstrap files -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <!-- Stylesheet  -->
+    <link rel="stylesheet" href="css/about-us.css" type="text/css">
+    
+    <!-- Header -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    
+    <script> 
+        $(function(){
+            $("#header").load("header.html"); 
+        });
+    </script> 
+
+    <!-- Nav header  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/main.css" type="text/css">
-    <style>
-
-    body
-    {
-        background-color: #1B2226;
-        background-image: none;
-        min-height: auto;
-    }
-
-    .imgbox1
-    {
-        background-color: #1B2226;
-        display: grid;
-        min-height: auto;
-    }
-
-    .center-fit1
-    {
-        max-width: 100%;
-        min-height: auto;
-    }
-
-    * 
-    {
-        box-sizing: border-box;
-    }
-
-    .flex:after 
-    {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-
-    .sidebar-right
-    {
-        width: 30%;
-        color: white;
-        background-color: #1B2226;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .main
-    {
-        background-color: #1B2226;
-        width: 70%;
-    }
-
-    .sidebar-right, .main
-    {
-        float: left;
-        min-height: auto;
-    }
-
-    .sidebar-right h1
-    {
-        font-weight: bold;
-        font-size:3vw;;
-
-    }
-
-    .sidebar-right h2
-    {
-        font-style: italic;
-        word-wrap: break-word;
-        font-size:1vw;
-        font-weight: 500;
-        
-    }
-
-    .sidebar-right h3
-    {
-        font-style: italic;
-        word-wrap: break-word;
-        font-size:2vw;
-        
-    }
-
-    .sidebar-right p
-    {
-        font-size: 1.2vw;
-    }
-
-    @media screen and (max-width: 800px) {
-    .sidebar-right {width: 100%; min-height: auto;}
-    .sidebar-right h1 {font-size:30px;}
-    .sidebar-right h2 {font-size:15px;}
-    .sidebar-right h3 {font-size:25px;}
-    .sidebar-right p {font-size: 15px;}
-    .main {width: 100%; min-height: auto;}
-    .flex {display: flex; flex-direction: column-reverse}
-    }
-
-
-    </style>
+    <!-- Load  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    
+    <script>
+    $(window).on('load', function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");
+    });
+    </script>
 
 </head>
 
-<header>
-    <div class = "height">
-        <a href="index.html"><img alt="LOGO" src="img/LOGO_1s.png" style="pointer-events: none;"></a>
-    </div>
-
-    <div class="topnav">
-        <div class="_topnav">
-
-        <div class="btn-group">
-
-            <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            COURSES
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="thread-forum.html">BS Geology</a>
-                <a class="dropdown-item" href="thread-forum.html">BS Chemical Engineering</a>
-                <a class="dropdown-item" href="thread-forum.html">BS Civil Engineering</a>
-                <a class="dropdown-item" href="thread-forum.html">BS Computer Engineering</a>
-                <a class="dropdown-item" href="thread-forum.html">BS Electrical Engineering</a>
-                <a class="dropdown-item" href="thread-forum.html">BS Electronics Engineering</a>
-                <a class="dropdown-item" href="thread-forum.html">BS Industrial Engineering</a>
-                <a class="dropdown-item" href="thread-forum.html">BS Mechanical Engineering</a>
-                <a class="dropdown-item" href="thread-forum.html">BS Mining Engineering</a>
-                <a class="dropdown-item" href="thread-forum.html">Dual Deg. MechEng. Mechatronics</a>
-            </div>
-
-        </div>
-
-        <div class="btn-group">
-
-        <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">KLASMEYT MARKET</button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="klasmeyt-market.html">Buy Books and Notes</a>
-                <a class="dropdown-item" href="klasmeyt-market.html">Donate/Sell Books and Notes</a>
-            </div>
-
-        </div>
-
-        <div class="btn-group">
-            <a href="about-us.html" class="btn" style="text-decoration: none; color: black;">ABOUT US</a>
-        </div>
-        
-        </div>
-    </div>
-</header>
-
 <body>
+
+    <div id="header"></div>
 
     <div class="flex">
 
@@ -196,5 +78,6 @@
     </div>
 
 </body>
+
+<div class="se-pre-con"></div>
 </html>
-</div>

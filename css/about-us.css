@@ -1,0 +1,105 @@
+
+body
+{
+    background-color: #1B2226;
+    background-image: none;
+    min-height: auto;
+}
+
+.imgbox1
+{
+    background-color: #1B2226;
+    display: grid;
+    min-height: auto;
+}
+
+.center-fit1
+{
+    max-width: 100%;
+    min-height: auto;
+}
+
+* 
+{
+    box-sizing: border-box;
+}
+
+.flex:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.sidebar-right
+{
+    width: 30%;
+    color: white;
+    background-color: #1B2226;
+    text-align: center;
+    padding: 20px;
+}
+
+.main
+{
+    background-color: #1B2226;
+    width: 70%;
+}
+
+.sidebar-right, .main
+{
+    float: left;
+    min-height: auto;
+}
+
+.sidebar-right h1
+{
+    font-weight: bold;
+    font-size:3vw;;
+
+}
+
+.sidebar-right h2
+{
+    font-style: italic;
+    word-wrap: break-word;
+    font-size:1vw;
+    font-weight: 500;
+    
+}
+
+.sidebar-right h3
+{
+    font-style: italic;
+    word-wrap: break-word;
+    font-size:2vw;
+    
+}
+
+.sidebar-right p
+{
+    font-size: 1.2vw;
+}
+
+@media screen and (max-width: 800px) {
+.sidebar-right {width: 100%; min-height: auto;}
+.sidebar-right h1 {font-size:30px;}
+.sidebar-right h2 {font-size:15px;}
+.sidebar-right h3 {font-size:25px;}
+.sidebar-right p {font-size: 15px;}
+.main {width: 100%; min-height: auto;}
+.flex {display: flex; flex-direction: column-reverse}
+}
+
+.no-js #loader { display: none;}
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
+}
