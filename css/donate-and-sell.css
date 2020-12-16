@@ -166,6 +166,7 @@ p.post
 .itemType {
     display: inline-block;
     margin-left: 10px;
+    color: white;
 }
 
 .title input[type="text"] 
