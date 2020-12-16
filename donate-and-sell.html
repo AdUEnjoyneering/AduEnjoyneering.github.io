@@ -9,12 +9,12 @@
     <meta name="date" content="October 17, 2020">
     <meta name="keywords" content="Forum, Engineering website, Help for engineering, Engineering Forum">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Klasmeyt Market</title>
+    <title>Donate</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/favicon.ico" />
 
     <!-- Stylesheet  -->
-    <link rel="stylesheet" href="css/klasmeyt-market.css" type="text/css">
+    <link rel="stylesheet" href="css/donate-and-sell.css" type="text/css">
     
     <!-- Header and Footer  -->
     <script
@@ -48,15 +48,19 @@
         <div class="main">
 
             <div class="sidebar-right">
-                <h2>LOOKING FOR SOMETHING ELSE?</h2>
-                <p class = "post">Make an inquiry post.</p>
+                <h2>Donate or Sell Books and Notes</h2>
+                <p class = "post">Would you like to donate or sell?</p>
                 
                 <div class="centerbut">
                     <form action="/chuchu.php">
                         <div class="title"><input type="text" placeholder=" TITLE" class="title"></div>
-                        <textarea id="inquiry" style="outline: none;" placeholder="Hi, I would like to buy..."></textarea>
+                        <textarea id="inquiry" style="outline: none;" placeholder=""></textarea>
                         <div class="photoalt">
                             <input type="file" id="photo-upload" name="photoalt" accept=".tif, .jpg, .png, .jpeg" multiple="multiple">
+                        </div>
+                        <div class="itemType">                        
+                            <input type="radio" name="itemType" value="donation"> Donate
+                            <input type="radio" name="itemType" value="sell"> Sell
                         </div>
 
                         <div class="centerbutton">
@@ -77,18 +81,10 @@
                         <button type="button" class="btnkm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Filter</button>
                         <div class="dropdown-menu" id="box-drop">
-                            <a class="dropdown-item" href="">Low to High</a>
-                            <a class="dropdown-item" href="">High to Low</a>
-                            <a class="dropdown-item" href="">High ONLY</a>
-                            <a class="dropdown-item" href="">Low ONLY</a>
+                            <a class="dropdown-item" href="">Donations Only</a>
+                            <a class="dropdown-item" href="">Products Only</a>
                         </div>
                     </div>
-                </div>
-
-                <div class="search-bar">
-                    <form class="search">
-                        SEARCH <input type="search">
-                    </form>
                 </div>
 
             </div>

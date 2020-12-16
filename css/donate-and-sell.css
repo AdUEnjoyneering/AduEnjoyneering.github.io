@@ -100,7 +100,7 @@ p.post
     border: none;
     border-radius: 5px;
     outline: none;
-    width: 130px;
+    width: 100px;
 }
 
 .centerbut {
@@ -163,11 +163,9 @@ p.post
     background-color: #1B2226;
 }
 
-input[name=photoalt] {
-    color: white;
-    box-shadow: 0px 0px 0px 1px #fea12f inset;
-    border-radius: 4px;
-    margin-bottom: 5px;
+.itemType {
+    display: inline-block;
+    margin-left: 10px;
 }
 
 .title input[type="text"] 
@@ -183,6 +181,13 @@ input[name=photoalt] {
     padding-left: 2%;
     outline: none;
     margin-bottom: 3px;
+}
+
+input[name=photoalt] {
+    color: white;
+    box-shadow: 0px 0px 0px 1px #fea12f inset;
+    border-radius: 4px;
+    margin-bottom: 5px;
 }
 
 @media screen and (max-width: 780px) {
@@ -201,6 +206,7 @@ input[name=photoalt] {
     .centerbut {text-align: center;}
     .box {margin-top: 10px;}
     .sidebar-right {margin-bottom: 10px;}
+    .itemType {margin-bottom: 5px;}
 }
 
 @media screen and (min-width: 601px) {
