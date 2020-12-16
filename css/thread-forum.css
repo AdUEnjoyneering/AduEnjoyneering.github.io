@@ -2,16 +2,30 @@
 * {
     box-sizing: border-box;
 }
-.sidebar-left
-{
-    width: 21%;
-
-    background-color: #1B2226;
-}
 
 .main
 {
-    width: 79%;
+    width: 60%;
+    margin: 0 auto 0 auto;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar 
+{
+    width: 20px;
+}
+
+::-webkit-scrollbar-track 
+{
+    border: none;
+    background-color: #fea12f;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb 
+{
+    background: #003f5a;
+    border-radius: 2px;   
 }
 
 form.search input[type=search]
@@ -20,7 +34,7 @@ form.search input[type=search]
     padding: 10px;
     font-size: 17px;
     border: none;
-    width: 80%;
+    width: 100%;
     background: #fea02f;
     border-radius: 10px 0px 0px 10px;
     outline: none;
@@ -64,14 +78,30 @@ button .fas
 
 .box
 {
+    margin-top: 5px;
     display: block;
-    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #003f5a;
-    width: 80%;
+    background-color: #1B2226;
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.box1
+{
+    display: block;
     padding: 20px;
-    border-radius: 50px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px 1px #fea12f inset;
+    min-height: 90vh;
+    max-height: 90vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    margin-top: 20px;
+    margin: 0 auto 0 auto;
+    width: 100%;
 }
 
 .tags
@@ -115,27 +145,27 @@ button .fas
     border: none;
     border-radius: 5px;
     resize: none;
-    height: 150px;
+    height: 80px;
     padding-left: 2%;
 }
 
 .title input[type="text"] 
 {
     padding: 2px; 
-    font-size: 25px; 
+    font-size: 18px; 
     font-weight: bold; 
     color: black;
     border: none;
     background: #fea02f; 
-    border-radius: 15px;
-    margin-bottom: 3%;
+    border-radius: 5px;
+    margin-bottom: 5px;
     width: 100%;
     padding-left: 2%;
 }
 
 .tags input[type="text"]
 {   padding-left: 1%;
-    font-size: 22px; 
+    font-size: 15px; 
     font-weight: bold; 
     color: black; 
     width: 70%;
@@ -147,13 +177,6 @@ button .fas
 #tag-name, #tags, #button
 {
     margin: 5px;
-}
-
-.sidebar-left, .main
-{
-    float: left;
-    padding: 10px;
-    min-height: 100vh;
 }
 
 .flex:after {
@@ -176,6 +199,15 @@ clear: both;
     display: flex;
     justify-content: center;
 }
+
+.footer {
+    width: 100%;
+    height: 4rem;            /* Footer height */
+    background-color: #1B2226;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    }
 
 @media screen and (max-width: 600px) {
     .sidebar-left {width: 100%; min-height: auto;}
